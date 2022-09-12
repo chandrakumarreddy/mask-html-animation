@@ -1,0 +1,78 @@
+.card {
+  width: 180px;
+  height: 291.362px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.common.small {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  position: absolute;
+  background-size: cover;
+  background-image: url(https://sorare.com//assets/common-reward.0dcbd382.png);
+}
+
+.animate {
+  /* -webkit-mask-size: cover;
+  -webkit-mask-image: url(/reveal-mask.png);
+  animation: jss232 1s steps(31) forwards, jss230 0.1s 0.9s forwards; */
+  -webkit-mask: url(/reveal-mask.png);
+  mask: url(/reveal-mask.png);
+  /* -webkit-mask: url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite-2.png);
+  mask: url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite-2.png); */
+  /* -webkit-mask-size: 7100% 100%;
+  mask-size: 7100% 100%; */
+  -webkit-animation: mask-play 1s steps(31) forwards;
+  animation: mask-play 1s steps(31) forwards;
+}
+
+@keyframes mask-play {
+  from {
+    /* -webkit-mask-position: 0% 0;
+    mask-position: 0% 0; */
+  }
+  to {
+    /* -webkit-mask-position: 100% 0;
+    mask-position: 100% 0; */
+    --webkit-mask-position: -5550px 0;
+  }
+}
+
+@keyframes jss230 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes jss231 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes jss232 {
+  to {
+    --webkit-mask-position-x: -5550px;
+  }
+}
+
+.jss228 {
+  width: 100%;
+  height: 100%;
+  animation: jss231 0.1s forwards;
+  border-radius: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+}

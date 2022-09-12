@@ -1,0 +1,87 @@
+.mask1 {
+  /* -webkit-mask-image: url(https://www.w3schools.com/css/w3logo.png);
+    mask-image: url(https://www.w3schools.com/css/w3logo.png); */
+  -webkit-mask: url(/reveal-mask.png);
+  mask: url(/reveal-mask.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  animation: mask-play 1.4s steps(83) forwards,
+    jss230 0.1s 0.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  margin: 2rem auto;
+  width: 180px;
+  height: 300px;
+  position: relative;
+}
+@keyframes mask-play {
+  from {
+    -webkit-mask-position-x: 10%;
+    mask-position-x: 10%;
+  }
+  to {
+    -webkit-mask-position-x: -6500px;
+    mask-position-x: -6500px;
+  }
+}
+
+@keyframes jss230 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.image {
+  border-radius: 8px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  position: absolute;
+  background-size: cover;
+  background-image: url(https://sorare.com/assets/common-reward.0dcbd382.png);
+}
+.jss71 {
+  background: url(https://assets.sorare.com/cache/cardsamplepicture/63db3850-efc2-4e6e-99ac-17b8b9197b7c/picture/6f80c4400952e80501cae80ce5eef3ce.png);
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 300px;
+  background-size: cover;
+  border-radius: 8px;
+  opacity: 0;
+}
+.animate {
+  animation: jss231 0.1s 0.5s forwards,
+    jss232 2s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes jss231 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes jss232 {
+  from {
+    transform: scale(1);
+  }
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
